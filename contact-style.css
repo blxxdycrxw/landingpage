@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Philosopher&family=Poppins:wght@300;600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+   color: #FFEFD3;
+}
+.nav-1{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00192F;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    position: relative;
+}
+.nav-1 ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+}
+.nav-1 ul li{
+    margin:0 10px;
+}
+.nav-1 ul a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFEFD3;
+    position: relative;
+    z-index: 1;
+}
+.nav-1 ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #F3B61F;
+    z-index: -1;
+    transition: 0.5s;
+}
+.nav-1 ul a:hover:after{
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    height: 50px;
+}
+
+section {
+    padding: 50px;
+    background-color: #FFC49B;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #F3B61F;
+    color: #00192F;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFEFD3;
+}
+
+textarea {
+    height: 150px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFC49B;
+}
+
+.social-links{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #00192F;
+    margin-top: -25px;
+}
+.social-links::before{
+    content: "";
+    width: calc(100% - 60px);
+    height: 3px;
+    position: absolute;
+    top:42%;
+    left: -20px;
+    background-color: #FFC49B;
+}
+.social-links a{
+    margin:0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #FFEFD3;
+    background-color:#F3B61F;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.social-links a:hover{
+    transform: translateY(-5px);
+}
